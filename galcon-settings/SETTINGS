@@ -1,0 +1,18 @@
+debug: false
+logfile: none
+players: newais.NEATAI oldais.tyler.TylerAI
+playerspergame: 2
+numplanets: 6
+visualizer: none twodimensiondefault.DefaultVisualizer
+mapmaker: PreGeneratedRandomMapMaker
+frametime: 1
+dimensions: 300 300
+fleetspeed: 2
+numrounds: 10
+ticlimit: 1000
+reversemaps: true
+maxradius: 50
+minradius: 12
+maxneutralunits: 50
+minproducetime: 34
+maxproducetime: 100
