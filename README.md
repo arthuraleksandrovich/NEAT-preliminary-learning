@@ -11,7 +11,7 @@ This project uses/contains code from these sources:
 4. Add/replace files from add-to-galcon directory to Galcon package. 
 5. Copy assets and setting directories from Galcon package to your project’s root. 
 6. Copy data package directory from Pac-Man package to your project’s root.
-7. Change SETTINGS file. 
+7. Replace SETTINGS file. 
 ### How to use ###
 Main file location is NEAT-preliminary-learning/src/experiment/RunExperiment.java. 
 Execution parameters of experiments:
