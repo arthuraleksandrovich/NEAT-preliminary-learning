@@ -32,7 +32,7 @@ private static final long serialVersionUID = 1L;
 			genomes.add(new Pair<>(g, index));
 			index++;
 		}
-		genomes.sort((a, b)->Double.compare(a.getKey().getScore(), b.getKey().getScore()));
+		genomes.sort((a, b)->-Double.compare(a.getKey().getScore(), b.getKey().getScore()));
 		
 		double total = 0;
 		int rank=1;
@@ -62,7 +62,7 @@ private static final long serialVersionUID = 1L;
 			genomes.add(new Pair<>(g, index));
 			index++;
 		}
-		genomes.sort((a, b)->Double.compare(a.getKey().getScore(), b.getKey().getScore()));
+		genomes.sort((a, b)->-Double.compare(a.getKey().getScore(), b.getKey().getScore()));
 		
 		double total = 0;
 		int rank=genomes.size();
