@@ -24,18 +24,18 @@ public class ProportionalSelection implements SelectionOperator, Serializable {
 
 	@Override
 	public int performAntiSelection(Random rnd, Species species) {
-		double minimal=species.getMembers().stream().mapToDouble((m)->m.getScore()).min().getAsDouble()-0.01;
+		double maximal=species.getMembers().stream().mapToDouble((m)->m.getScore()).max().getAsDouble()+0.01;
 		
 		double total = 0;
 		for (Genome g : species.getMembers()) {
-			total+=1.0/(g.getScore()-minimal);
+			total+=maximal-g.getScore();
 		}
 		
 		final double r = rnd.nextDouble() * total;
 		double current = 0;
 		int index=0;
 		for (Genome g : species.getMembers()) {
-			current += 1.0/(g.getScore()-minimal);
+			current+=maximal-g.getScore();
 			if (r < current) {
 				return index;
 			}
